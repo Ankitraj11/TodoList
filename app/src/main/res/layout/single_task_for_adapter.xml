@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="330dp"
+    android:layout_gravity="center"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="10dp"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="#0E58E8">
+
+   <LinearLayout
+       android:layout_height="wrap_content"
+       android:layout_width="330dp"
+       android:orientation="vertical">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="330dp"
+        android:textColor="#F4F1F1"
+        android:textStyle="bold"
+        android:textSize="10dp"
+          android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/task_info_view"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="330dp"
+        android:textColor="#F4F1F1"
+        android:textStyle="bold"
+        android:textSize="10dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textLongMessage"
+        android:id="@+id/task_desc_view"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="330dp"
+        android:textColor="#F4F1F1"
+        android:textStyle="bold"
+        android:textSize="10dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/task_author_view"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="330dp"
+        android:textColor="#F4F1F1"
+        android:textStyle="bold"
+        android:textSize="10dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/task_status_view"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_margin="10dp"
+           android:text="Edit"
+
+           android:background="#06248F"
+           android:textColor="#F4F1F1"
+           android:textStyle="bold"
+           android:textSize="10dp"
+           android:layout_height="wrap_content"
+           android:id="@+id/edit_task_btn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#F4EFEF"
+            android:textStyle="bold"
+            android:background="#06248F"
+            android:text="Delete"
+            android:textSize="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete_task_btn"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="320dp"
+
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+    <CheckBox
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+           android:text="make status complete"
+        android:textSize="10dp"
+        android:textColor="#F4EFEF"
+           android:layout_gravity="center"
+        android:id="@+id/complete_status_checkbox"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ok"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:textColor="#F4EFEF"
+            android:background="#06248F"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/ok_btn"/>
+
+
+
+    </LinearLayout>
+
+   </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

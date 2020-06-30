@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+        <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+           android:hint="task info"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#0F61DC"
+           android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/task_info"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="task description"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#0F61DC"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textLongMessage"
+        android:id="@+id/task_desc"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="your name"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#0F61DC"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/task_author"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:id="@+id/task_progress"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add your task"
+        android:padding="15dp"
+        android:textColor="#F4EFEF"
+        android:background="#06248F"
+        android:id="@+id/add_task_btn"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#F4EFEF"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="#06248F"
+        android:text="Update your task"
+        android:padding="15dp"
+        android:id="@+id/update_task_btn"/>
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+</LinearLayout>
